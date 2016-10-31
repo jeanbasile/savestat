@@ -1,0 +1,24 @@
+.en_savoir_plus:hover {
+    background: $vert;
+    transition: 0.5s;
+}
+
+.top_menu li:hover {
+    background-color: $brun;
+    transition: 0.5s;
+
+    a {
+        color: white;
+    }
+}
+
+.socials a i:hover {
+    color: $brun-clair;
+    transition: 0.3s;
+}
+
+.lien_donation h1 a:hover{
+    background-color: white;
+    color: $vert;
+    transition: 0.4s;
+}

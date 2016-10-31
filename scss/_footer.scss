@@ -1,0 +1,127 @@
+@import "variables";
+@import "animations";
+
+.main-footer {
+    background: $brun;
+    color: white;
+    margin-top: 50px;
+
+    .lien_donation {
+        margin-top: 30px;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        background: $brun;
+
+        a {
+            color: #fff;
+            background: $rouge;
+            padding: 15px;
+            display: block;
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .reseaux {
+        padding-top: 70px;
+        background: #FFF;
+
+        h1 {
+            text-align: center;
+            color: $brun;
+        }
+
+        .socials {
+            text-align: center;
+            font-size: 80px;
+
+            a {
+                color: $brun;
+            }
+        }
+    }
+
+    .liens_utiles {
+        h2 {
+            color: white;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
+
+// ------------------- Retour en haut de page ------------------------
+
+.scroll_button {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+
+    .fleche {
+        $hauteur_button: 66px;
+        position: relative;
+        width: $hauteur_button;
+        height: $hauteur_button;
+        background-color: $brun-clair;
+        border-radius: 50%;
+        text-align: center;
+        line-height: $hauteur_button;
+        font-size: 36px;
+
+        a {
+            color: white;
+
+            i {
+                transform: translateY(-4px);
+            }
+        }
+    }
+    @media (max-width: $mobile_size) {
+        .fleche {
+            display: none;
+        }
+
+    }
+
+}
+// ---------------------- pub recyclage ------------------------
+
+.recyclage {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: $rouge;
+}
+// --------------------- responsive -------------------------
+@media (max-width: $mobile_size) {
+    .liens_utiles div {
+        text-align: center;
+    }
+}
+
+@media (min-width: $mobile_size) {
+  .logo_parc {
+    width: 100%;
+    height: auto;
+  }
+}
