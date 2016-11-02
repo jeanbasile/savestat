@@ -3,3 +3,28 @@ $brun-clair: #b19c89;
 $rouge: #c54545;
 $vert: #285943;
 $mobile_size: 700px;
+$titre: "Bebas Neue";
+
+@mixin clearfix() {
+    &:after,
+    &:before {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}

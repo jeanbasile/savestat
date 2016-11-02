@@ -6,11 +6,13 @@
     color: white;
     margin-top: 50px;
 
+
     .lien_donation {
         margin-top: 30px;
         padding-top: 50px;
         padding-bottom: 70px;
         background: $brun;
+
 
         a {
             color: #fff;
@@ -49,7 +51,7 @@
     .liens_utiles {
         h2 {
             color: white;
-            font-family: "Bebas Neue";
+            font-family: $titre;
             font-size: 24px;
         }
 
@@ -74,6 +76,7 @@
     position: fixed;
     bottom: 10%;
     right: 5%;
+    z-index: 100;
 
     .fleche {
         $hauteur_button: 66px;

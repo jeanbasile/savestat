@@ -13,19 +13,25 @@ $(document).ready(function() {
 
             topMenu.removeClass('open');
 
-        })
+        });
 
-    })
+    });
+
+
+
+    // bouton haut de page
+
+
 
     var duration = 500;
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > 100) {
             // Si un défillement de 100 pixels ou plus.
             // Ajoute le bouton
-            jQuery('.cRetour').fadeIn(duration);
+            jQuery('.scroll_button').fadeIn(duration);
         } else {
             // Sinon enlève le bouton
-            jQuery('.cRetour').fadeOut(duration);
+            jQuery('.scroll_button').fadeOut(duration);
         }
     });
 
@@ -39,7 +45,20 @@ $(document).ready(function() {
     });
 
 
+
     $('.js-parallax').parallax();
     $('.bxslider').bxSlider();
 
-})
+
+// Lire la suite
+
+    $(".more").hide();
+        jQuery('.button-read-more').click(function () {
+            $(this).closest('.less').addClass('active');
+            $(this).closest(".less").prev().stop(true).slideDown("1000");
+        });
+        jQuery('.button-read-less').click(function () {
+            $(this).closest('.less').removeClass('active');
+            $(this).closest(".less").prev().stop(true).slideUp("1000");
+        });
+});

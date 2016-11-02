@@ -2,129 +2,53 @@
 @import "typo";
 @import "variables";
 @import "animations";
-@mixin clearfix() {
-    &:after,
-    &:before {
-        display: table;
-        content: "";
-    }
-
-    &:after {
-        clear: both;
-    }
-}
-
-.container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.img-responsive {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 @import "toast";
 @import "header";
 @import "footer";
+@import "presentation_article";
 
 section:first-of-type {
     padding: 50px 0;
 }
-// ----------------------- Slider css------------------------
-// @keyframes slidy {
-//     0% {
-//         left: 0;
-//     }
-//
-//     20% {
-//         left: 0;
-//     }
-//
-//     25% {
-//         left: -100%;
-//     }
-//
-//     45% {
-//         left: -100%;
-//     }
-//
-//     50% {
-//         left: -200%;
-//     }
-//
-//     70% {
-//         left: -200%;
-//     }
-//
-//     75% {
-//         left: -300%;
-//     }
-//
-//     95% {
-//         left: -300%;
-//     }
-//
-//     100% {
-//         left: -400%;
-//     }
-// }
-//
-// div#slider {
-//     overflow: hidden;
-// }
-//
-// div#slider figure img {
-//     width: 20%;
-//     float: left;
-// }
-//
-// div#slider figure {
-//     position: relative;
-//     width: 500%;
-//     margin: 0;
-//     left: 0;
-//     text-align: left;
-//     font-size: 0;
-//     animation: 30s slidy infinite;
-// }
+
 // ------------- Effet de parallax CSS ---------------
 
-.parallax {
-    position: relative;
-    padding: 50px 0;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    &.parallax1 {
-        background-image: url('../images/lamantin.jpg');
-    }
-
-    &.parallax2 {
-        background-image: url('../images/orang_outan.jpg');
-    }
-
-    .inner {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(#000, .3);
-    }
-}
+// .parallax {
+//     position: relative;
+//     padding: 50px 0;
+//     height: 200px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+//
+//     &.parallax1 {
+//         background-image: url('../images/lamantin.jpg');
+//     }
+//
+//     &.parallax2 {
+//         background-image: url('../images/orang_outan.jpg');
+//     }
+//
+//     .inner {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         background-color: rgba(#000, .3);
+//     }
+// }
 // --------------- Parallax Js -------------------------
 .js-parallax-container {
-    height: 500px;
+    height: 450px;
     position: relative;
     overflow: hidden;
+    z-index: 50;
+
 }
 
-.js-parrallax {
+.js-parallax {
     position: absolute;
     top: 0;
     left: 0;
@@ -151,7 +75,7 @@ a {
 }
 
 h1 {
-    font-family: "Bebas Neue";
+    font-family: $titre;
     font-size: 50px;
 }
 

@@ -1,0 +1,56 @@
+@import "variables";
+
+.contenu {
+    color: $brun;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    h2 {
+        font-family: $titre;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .less {
+        background-color: $vert;
+        padding: 10px;
+        width: 20%;
+        margin-top: 20px;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.button-read-less,
+.less.active .button-read-more {
+    display: none;
+}
+
+.less.active .button-read-less {
+    display: block;
+}
+
+.more {
+    margin-top: 10px;
+}
+
+.more p {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: $mobile_size) {
+    .contenu p {
+        margin: 40px;
+    }
+
+    .less {
+        margin-left: 40px;
+        width: 70%;
+    }
+}
