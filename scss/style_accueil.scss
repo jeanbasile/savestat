@@ -6,39 +6,13 @@
 @import "header";
 @import "footer";
 @import "presentation_article";
+@import "conservation";
 
 section:first-of-type {
     padding: 50px 0;
 }
 
-// ------------- Effet de parallax CSS ---------------
 
-// .parallax {
-//     position: relative;
-//     padding: 50px 0;
-//     height: 200px;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-attachment: fixed;
-//
-//     &.parallax1 {
-//         background-image: url('../images/lamantin.jpg');
-//     }
-//
-//     &.parallax2 {
-//         background-image: url('../images/orang_outan.jpg');
-//     }
-//
-//     .inner {
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         bottom: 0;
-//         left: 0;
-//         background-color: rgba(#000, .3);
-//     }
-// }
 // --------------- Parallax Js -------------------------
 .js-parallax-container {
     height: 450px;
@@ -77,6 +51,7 @@ a {
 h1 {
     font-family: $titre;
     font-size: 50px;
+    // color: $brun;
 }
 
 

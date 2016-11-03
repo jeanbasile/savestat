@@ -26,15 +26,14 @@
         }
     }
 }
-
-.button-read-less,
-.less.active .button-read-more {
-    display: none;
-}
-
-.less.active .button-read-less {
-    display: block;
-}
+// .button-read-less,
+// .less.active .button-read-more {
+//     display: none;
+// }
+//
+// .less.active .button-read-less {
+//     display: block;
+// }
 
 .more {
     margin-top: 10px;
@@ -45,12 +44,14 @@
     padding: 0;
 }
 @media (max-width: $mobile_size) {
-    .contenu p {
-        margin: 40px;
-    }
+    .contenu {
+        p {
+            margin: 40px;
+        }
 
-    .less {
-        margin-left: 40px;
-        width: 70%;
+        .less {
+            margin-left: 40px;
+            width: 70%;
+        }
     }
 }

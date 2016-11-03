@@ -28,3 +28,15 @@ $titre: "Bebas Neue";
     width: 100%;
     height: auto;
 }
+
+
+// ------------------Menus déroulants------------------------
+
+.button-read-less,
+.less.active .button-read-more, .button-conservation-less, .less.active .button-conservation-more {
+    display: none;
+}
+
+.less.active .button-read-less, .less.active .button-conservation-less {
+    display: block;
+}

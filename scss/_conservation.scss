@@ -1,0 +1,193 @@
+@import "variables";
+
+.conservation {
+    text-align: center;
+
+    h1 {
+        color: $brun;
+    }
+
+    h2 {
+        color: $brun;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+}
+// -----------------------------------------------------------------------------
+
+.my-tab-btns {
+    ul {
+        list-style: none;
+        text-align: center;
+
+        li {
+            // display: inline-block;
+            a {
+                display: block;
+                margin: 0 20px;
+
+                i {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.my-tabs .my-tab {
+    display: none;
+    margin: 20px;
+    padding: 20px;
+}
+//  ---------------------- Continents couleurs individuelles ----------------------------
+
+.amerique_nord {
+    text-align: center;
+
+    h2 {
+        border: 1px solid #F5CD11;
+        width: 80%;
+
+        &:hover {
+            color: white;
+            background-color: #F5CD11;
+            transition: 0.5s;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    a {
+        font-family: $titre;
+        color: $brun;
+        font-size: 30px;
+    }
+}
+
+.europe {
+    text-align: center;
+
+    h2 {
+        border: 1px solid #5395B8;
+        width: 80%;
+
+        &:hover {
+            color: white;
+            background-color: #5395B8;
+            transition: 0.5s;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    a {
+        font-family: $titre;
+        color: $brun;
+        font-size: 30px;
+    }
+}
+
+.asie {
+    text-align: center;
+
+    h2 {
+        border: 1px solid #AF4B83;
+        width: 80%;
+
+        &:hover {
+            color: white;
+            background-color: #AF4B83;
+            transition: 0.5s;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    a {
+        font-family: $titre;
+        color: $brun;
+        font-size: 30px;
+    }
+}
+
+.amerique_sud {
+    text-align: center;
+
+    h2 {
+        border: 1px solid #93C021;
+        width: 80%;
+
+        &:hover {
+            color: white;
+            background-color: #93C021;
+            transition: 0.5s;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    a {
+        font-family: $titre;
+        color: $brun;
+        font-size: 30px;
+    }
+}
+
+.afrique {
+    text-align: center;
+
+    h2 {
+        border: 1px solid #F19109;
+        width: 80%;
+
+        &:hover {
+            color: white;
+            background-color: #F19109;
+            transition: 0.5s;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    a {
+        font-family: $titre;
+        color: $brun;
+        font-size: 30px;
+    }
+}
+
+.australie {
+    text-align: center;
+
+    h2 {
+        border: 1px solid #2D2C77;
+        width: 80%;
+
+        &:hover {
+            color: white;
+            background-color: #2D2C77;
+            transition: 0.5s;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    a {
+        font-family: $titre;
+        color: $brun;
+        font-size: 30px;
+    }
+}
