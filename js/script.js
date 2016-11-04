@@ -51,16 +51,16 @@ $(document).ready(function() {
 
 
     // -----------------------------boutons Lire la suite-------------------------
-
-    $(".more").hide();
-    jQuery('.button-read-more').click(function() {
-        $(this).closest('.less').addClass('active');
-        $(this).closest(".less").prev().stop(true).slideDown("1000");
-    });
-    jQuery('.button-read-less').click(function() {
-        $(this).closest('.less').removeClass('active');
-        $(this).closest(".less").prev().stop(true).slideUp("1000");
-    });
+    // 
+    // $(".more").hide();
+    // jQuery('.button-read-more').click(function() {
+    //     $(this).closest('.less').addClass('active');
+    //     $(this).closest(".less").prev().stop(true).slideDown("1000");
+    // });
+    // jQuery('.button-read-less').click(function() {
+    //     $(this).closest('.less').removeClass('active');
+    //     $(this).closest(".less").prev().stop(true).slideUp("1000");
+    // });
 
     // ------------------------ menus déroulants conservation---------------
 
@@ -114,7 +114,7 @@ tabBtns.on('click', function(evt) {
   // tabs.fadeOut();
   // tabs.eq(tabBtns.index(this)).fadeIn();
 
-
+$('.carousel').carousel()
 
 });
 

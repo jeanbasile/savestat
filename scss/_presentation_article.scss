@@ -1,57 +1,91 @@
 @import "variables";
 
+h1 {
+    color: $brun;
+    font-size: 30px;
+    text-align: center;
+}
+
 .contenu {
     color: $brun;
 
+    p {
+        margin-top: 0;
+        text-align: justify;
+    }
+
     img {
         display: block;
-        width: 100%;
+        margin: 0 auto;
+        // width: 100%;
+        // max-height: 200px;
     }
 
     h2 {
         font-family: $titre;
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
         margin-top: 50px;
     }
 
-    .less {
+    a {
+        display: block;
+        // margin: 10px;
         background-color: $vert;
         padding: 10px;
-        width: 20%;
+        width: 150px;
         margin-top: 20px;
+        color: white;
 
-        a {
-            color: white;
+        &:hover {
+            color: $vert;
+            background: white;
+            border: solid 1px $vert;
+            transition: 0.4s;
         }
     }
 }
-// .button-read-less,
-// .less.active .button-read-more {
-//     display: none;
-// }
-//
-// .less.active .button-read-less {
-//     display: block;
-// }
-
-.more {
-    margin-top: 10px;
-}
-
-.more p {
-    margin: 0;
-    padding: 0;
-}
 @media (max-width: $mobile_size) {
     .contenu {
+        a,
         p {
             margin: 40px;
         }
 
-        .less {
-            margin-left: 40px;
-            width: 70%;
+        img {
+            width: 85%;
         }
     }
+}
+
+.js-parallax-container.article {
+    height: 250px;
+}
+
+
+.pagination {
+
+
+  ul {
+    // display: block;
+    width: 60%;
+    margin: 0 auto;
+
+    li {
+      list-style: none;
+      text-align: center;
+    }
+  }
+}
+
+.prev, .suiv {
+    background-color: $vert;
+    padding: 15px;
+    a {
+      color: white;
+    }
+}
+
+.prev {
+
 }

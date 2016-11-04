@@ -7,42 +7,12 @@
 @import "footer";
 @import "presentation_article";
 @import "conservation";
+@import "partenaire";
 
 section:first-of-type {
     padding: 50px 0;
 }
 
-
-// --------------- Parallax Js -------------------------
-.js-parallax-container {
-    height: 450px;
-    position: relative;
-    overflow: hidden;
-    z-index: 50;
-
-}
-
-.js-parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.js-parallax img {
-    display: none;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
 // --------------------- textes ----------------------
 a {
     text-decoration: none;
@@ -103,5 +73,50 @@ article {
   p {
     color: $brun;
   }
+
+}
+
+
+span.inner {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 20;
+}
+
+.infos_slider {
+  z-index: 21;
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 70%;
+  right: 0;
+  display: inline-block;
+  h2 {
+    display: inline-block;
+      font-family: $titre;
+      color: white;
+      font-size: 25px;
+  }
+  h3 {
+    color: white;
+    font-family: "myriad pro";
+    background: $rouge;
+    font-size: 20px;
+    padding: 10px;
+    // margin: 10px;
+    width: 150px;
+    &:hover {
+        background-color: white;
+        color: $vert;
+        transition: 0.4s;
+    }
+  }
+
 
 }

@@ -1,0 +1,28 @@
+@import "variables";
+
+.liste_donateurs {
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.partenaire {
+
+  p{
+    text-align: justify;
+  }
+}
+
+.top_donateurs {
+  ul li {
+    list-style: none;
+    float: left;
+    img {
+      width: 300px;
+    }
+  }
+
+  @include clearfix;
+}
