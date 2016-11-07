@@ -179,3 +179,47 @@ header img {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
+//---------------------------- Barres de séparation --------------------
+
+.barre {
+    color: $brun;
+    font-size: 20px;
+    margin-top: 40px;
+    vertical-align: middle;
+    text-align: center;
+
+    p {
+        display: block;
+        text-align: center;
+
+        span {
+            display: inline-block;
+            margin-right: -0.25em;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+            height: 1px;
+            margin: 0 auto;
+            background-color: $brun;
+            margin-top: -5px;
+            // margin-right: -0.25em;
+        }
+
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 auto;
+            width: 100px;
+            height: 1px;
+            background-color: $brun;
+            margin-top: -5px;
+            // margin-right: -0.25em;
+        }
+    }
+}

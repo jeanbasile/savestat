@@ -17,8 +17,6 @@ h1 {
     img {
         display: block;
         margin: 0 auto;
-        // width: 100%;
-        // max-height: 200px;
     }
 
     h2 {
@@ -30,17 +28,16 @@ h1 {
 
     a {
         display: block;
-        // margin: 10px;
         background-color: $vert;
         padding: 10px;
         width: 150px;
         margin-top: 20px;
         color: white;
+        border: solid 1px $vert;
 
         &:hover {
             color: $vert;
             background: white;
-            border: solid 1px $vert;
             transition: 0.4s;
         }
     }
@@ -62,30 +59,30 @@ h1 {
     height: 250px;
 }
 
-
 .pagination {
+    margin-top: 80px;
 
+    ul {
+        // display: block;
+        margin: 0 auto;
 
-  ul {
-    // display: block;
-    width: 60%;
-    margin: 0 auto;
-
-    li {
-      list-style: none;
-      text-align: center;
+        li {
+            list-style: none;
+            text-align: center;
+        }
     }
-  }
 }
 
-.prev, .suiv {
+.prev,
+.suiv {
     background-color: $vert;
     padding: 15px;
+
     a {
-      color: white;
+        color: white;
     }
 }
 
-.prev {
-
+.suiv {
+    right: 0;
 }
