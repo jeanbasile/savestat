@@ -198,7 +198,7 @@ header img {
             margin-right: -0.25em;
         }
 
-        &:before {
+        &:before, &:after {
             content: "";
             display: inline-block;
             vertical-align: middle;
@@ -206,19 +206,7 @@ header img {
             height: 1px;
             margin: 0 auto;
             background-color: $brun;
-            margin-top: -5px;
-            // margin-right: -0.25em;
-        }
-
-        &:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 auto;
-            width: 100px;
-            height: 1px;
-            background-color: $brun;
-            margin-top: -5px;
+            margin-top: -8px;
             // margin-right: -0.25em;
         }
     }

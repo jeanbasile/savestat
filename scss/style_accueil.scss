@@ -8,6 +8,7 @@
 @import "presentation_article";
 @import "conservation";
 @import "partenaire";
+// @import "recyclage";
 
 section:first-of-type {
     padding: 50px 0;
@@ -104,7 +105,7 @@ span.inner {
 
     h3 {
         color: white;
-        font-family: "myriad pro";
+        // font-family: "myriad pro";
         background: $rouge;
         font-size: 20px;
         padding: 10px;

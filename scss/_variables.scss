@@ -5,6 +5,14 @@ $vert: #285943;
 $mobile_size: 700px;
 $titre: "Bebas Neue";
 
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('../fonts/bebas_neue/BebasNeue Regular.ttf');
+}
+
+
+
+
 @mixin clearfix() {
     &:after,
     &:before {
