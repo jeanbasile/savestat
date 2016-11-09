@@ -8,6 +8,7 @@
 @import "presentation_article";
 @import "conservation";
 @import "partenaire";
+@import "contact";
 // @import "recyclage";
 
 section:first-of-type {
@@ -90,9 +91,9 @@ span.inner {
 .infos_slider {
     z-index: 21;
     position: absolute;
-    top: 40%;
+    top: 10%;
     bottom: 0;
-    left: 70%;
+    left: 10%;
     right: 0;
     display: inline-block;
 
