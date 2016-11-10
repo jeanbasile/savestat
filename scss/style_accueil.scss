@@ -9,12 +9,13 @@
 @import "conservation";
 @import "partenaire";
 @import "contact";
-// @import "recyclage";
+@import "mentions_legales"; // @import "recyclage";
 
 section:first-of-type {
     padding: 50px 0;
 }
 // --------------------- textes ----------------------
+
 a {
     text-decoration: none;
 }
@@ -75,6 +76,16 @@ article {
         color: $brun;
     }
 }
+// --------------------------Nous soutenir --------------------------
+@media (max-width: $mobile_size) {
+    .rappel_don,
+    .rappel_recycage, .rappel_financement {
+        p {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
 // -------------------------- Gestion Slider ------------------------
 span.inner {
     position: absolute;
@@ -121,6 +132,7 @@ span.inner {
     }
 }
 // ----------------------------- section nous_soutenir -----------------
+
 .nous_soutenir {
     color: $brun;
     font-family: "myriad pro";

@@ -1,0 +1,43 @@
+.cgv, .mentions_legales {
+    color: $brun;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    h1,
+    h2,
+    h3 {
+        font-family: $titre;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        text-align: justify;
+    }
+    ul {
+      list-style: none;
+    }
+}
+
+
+@media (max-width: $mobile_size) {
+    .cgv {
+        h1,
+        h2,
+        h3,
+        p {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+
+
+}

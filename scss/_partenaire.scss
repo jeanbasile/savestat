@@ -1,28 +1,94 @@
 @import "variables";
 
 .liste_donateurs {
+    text-align: center;
+
     ul {
+        text-align: left;
+
         li {
             list-style: none;
         }
     }
+
+    h2 {
+        font-family: $titre;
+        color: $brun;
+        text-align: center;
+    }
+
+    img {
+        margin: 0 auto;
+        max-width: 400px;
+    }
 }
 
 .partenaire {
-
-  p{
-    text-align: justify;
-  }
+    p {
+        text-align: justify;
+    }
 }
 
-.top_donateurs {
-  ul li {
-    list-style: none;
-    float: left;
+.platine {
     img {
-      width: 300px;
+        max-width: 500px;
+        margin: 0 auto;
     }
-  }
 
-  @include clearfix;
+    .row img {
+        max-width: 200px;
+    }
+
+    ul li {
+        list-style: none;
+        float: left;
+
+        img {
+            width: 100px;
+        }
+    }
+    @include clearfix;
+}
+
+.argent,
+.bronze,
+.or {
+    ul {
+        padding: 0;
+    }
+}
+@media (max-width:$mobile_size) {
+    .argent,
+    .bronze,
+    .or {
+        ul {
+            li {
+                text-align: center;
+            }
+        }
+    }
+    // .partenaire div p {
+    //   // margin-left: 10px;
+    //   // margin-right: 10px;
+    //
+    //   padding-left: 10px;
+    //   padding-right: 10px;
+    // }
+}
+
+@media (min-width:$mobile_size) {
+    .argent,
+    .bronze,
+    .or {
+        ul {
+            margin-top: 0;
+        }
+    }
+    // .partenaire div p {
+    //   // margin-left: 10px;
+    //   // margin-right: 10px;
+    //
+    //   padding-left: 10px;
+    //   padding-right: 10px;
+    // }
 }

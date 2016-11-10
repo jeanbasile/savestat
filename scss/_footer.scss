@@ -6,13 +6,11 @@
     color: white;
     margin-top: 50px;
 
-
     .lien_donation {
         margin-top: 30px;
         padding-top: 50px;
         padding-bottom: 70px;
         background: $brun;
-
 
         a {
             color: #fff;
@@ -67,11 +65,29 @@
             }
         }
 
+        div a:hover {
+            // background: white;
+            color: $brun-clair;
+            transition: 0.3s;
+        }
+
+        a:hover h2 {
+            // background: white;
+            color: $brun-clair;
+            transition: 0.3s;
+        }
+
+        .barre {
+            color: white;
+
+            p:after,
+            p:before {
+                background-color: white;
+            }
+        }
     }
 }
-
 // ------------------- Retour en haut de page ------------------------
-
 .scroll_button {
     position: fixed;
     bottom: 10%;
@@ -101,22 +117,17 @@
         .fleche {
             display: none;
         }
-
     }
-
 }
-
-
 // --------------------- responsive -------------------------
 @media (max-width: $mobile_size) {
     .liens_utiles div {
         text-align: center;
     }
 }
-
 @media (min-width: $mobile_size) {
-  .logo_parc {
-    width: 100%;
-    height: auto;
-  }
+    .logo_parc {
+        width: 100%;
+        height: auto;
+    }
 }
