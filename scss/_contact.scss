@@ -1,4 +1,6 @@
 section.formulaire {
+    color: $brun;
+
     form {
         margin: 0 auto;
         width: 500px;
@@ -37,7 +39,19 @@ section.formulaire {
 
         button {
             padding-left: 90px;
-            margin-left: 0.5em;
+            // margin-left: 0.5em;
+
+            margin: 0 auto;
+
+            color: $brun;
+            background-color: white;
+            border: 1px solid $brun;
+
+            &:hover {
+                color: white;
+                background-color: $brun;
+                transition: 0.2s;
+            }
         }
     }
 }

@@ -9,7 +9,11 @@
 @import "conservation";
 @import "partenaire";
 @import "contact";
-@import "mentions_legales"; // @import "recyclage";
+@import "mentions_legales";
+
+body {
+  color: $brun;
+}
 
 section:first-of-type {
     padding: 50px 0;
@@ -35,7 +39,6 @@ h1 {
 .intro_beauval_nature {
     text-align: center;
     color: $brun;
-    height: 350px;
 
     .logo_intro_bn {
         text-align: center;
@@ -61,11 +64,6 @@ h1 {
     }
 }
 //  ----------------------En savoir plus --------------------------
-@media (max-width: $mobile_size) {
-    .space {
-        height: 300px;
-    }
-}
 
 article {
     h1 {
@@ -76,16 +74,7 @@ article {
         color: $brun;
     }
 }
-// --------------------------Nous soutenir --------------------------
-@media (max-width: $mobile_size) {
-    .rappel_don,
-    .rappel_recycage, .rappel_financement {
-        p {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-    }
-}
+
 // -------------------------- Gestion Slider ------------------------
 span.inner {
     position: absolute;
@@ -133,7 +122,22 @@ span.inner {
 }
 // ----------------------------- section nous_soutenir -----------------
 
-.nous_soutenir {
+.rappel_financement {
+  margin-bottom: 40px;
+}
+
+@media (max-width: $mobile_size) {
+    .rappel_don,
+    .rappel_recyclage, .rappel_financement, .intro_beauval_nature {
+        div p {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
+
+
+.nous_soutenir, .intro_beauval_nature {
     color: $brun;
     font-family: "myriad pro";
 
@@ -143,13 +147,12 @@ span.inner {
         // color: white;
     }
 
-    a {
+    div a {
         display: block;
         text-align: center;
         background-color: $vert;
         padding: 10px;
         width: 150px;
-        // margin-top: 20px;
         margin: 40px auto 0;
         color: white;
         text-decoration: none;
