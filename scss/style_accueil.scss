@@ -98,13 +98,13 @@ span.inner {
     display: inline-block;
 
     h2 {
-        display: inline-block;
+        // display: inline-block;
         font-family: $titre;
         color: white;
         font-size: 25px;
     }
 
-    h3 {
+    a {
         color: white;
         // font-family: "myriad pro";
         background: $rouge;
@@ -128,7 +128,7 @@ span.inner {
 
 @media (max-width: $mobile_size) {
     .rappel_don,
-    .rappel_recyclage, .rappel_financement, .intro_beauval_nature {
+    .rappel_recyclage, .rappel_financement, .intro_beauval_nature, .animaux {
         div p {
             margin-left: 50px;
             margin-right: 50px;
