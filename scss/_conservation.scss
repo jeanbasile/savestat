@@ -82,7 +82,7 @@
         border: 1px solid #F5CD11;
         width: 80%;
 
-        &:hover {
+        &:hover, &.highlight {
             color: white;
             background-color: #F5CD11;
             transition: 0.5s;
@@ -107,7 +107,7 @@
         border: 1px solid #5395B8;
         width: 80%;
 
-        &:hover {
+        &:hover, &.highlight {
             color: white;
             background-color: #5395B8;
             transition: 0.5s;
@@ -132,7 +132,7 @@
         border: 1px solid #AF4B83;
         width: 80%;
 
-        &:hover {
+        &:hover, &.highlight {
             color: white;
             background-color: #AF4B83;
             transition: 0.5s;
@@ -157,7 +157,7 @@
         border: 1px solid #93C021;
         width: 80%;
 
-        &:hover {
+        &:hover, &.highlight {
             color: white;
             background-color: #93C021;
             transition: 0.5s;
@@ -182,7 +182,7 @@
         border: 1px solid #F19109;
         width: 80%;
 
-        &:hover {
+        &:hover, &.highlight {
             color: white;
             background-color: #F19109;
             transition: 0.5s;
@@ -207,7 +207,7 @@
         border: 1px solid #2D2C77;
         width: 80%;
 
-        &:hover {
+        &:hover, &.highlight {
             color: white;
             background-color: #2D2C77;
             transition: 0.5s;
@@ -223,4 +223,15 @@
         color: $brun;
         font-size: 30px;
     }
+}
+
+// -------------------------------------- Map ------------------------------------
+
+.map g:hover path {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+  width: 120%;
+  cursor: pointer;
 }

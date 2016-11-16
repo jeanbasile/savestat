@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 
 
-    // bouton haut de page
+    // ----------------------------- bouton haut de page ------------------------
 
 
 
@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 
     // -----------------------------boutons Lire la suite-------------------------
-    // 
+    //
     // $(".more").hide();
     // jQuery('.button-read-more').click(function() {
     //     $(this).closest('.less').addClass('active');
@@ -79,6 +79,8 @@ $(document).ready(function() {
   //       $(this).closest(".less").next().stop(true).slideUp("1000");
   //
   //   });
+
+// --------------------------------- Boutons Map ---------------------
 
 var tabBtns = $('.my-tab-btn');
 var tabs = $('.my-tab');
@@ -114,36 +116,44 @@ tabBtns.on('click', function(evt) {
   // tabs.fadeOut();
   // tabs.eq(tabBtns.index(this)).fadeIn();
 
-$('.carousel').carousel()
+});
+
+// ------------------------------------- MAP -----------------------------------------
+
+
+var continents = $('.js-map');
+
+continents.on('mouseover', function() {
+  var target = $("#" + $(this).attr("data-target"));
+  console.log(target.find('h2'));
+  target.find('h2').addClass('highlight');
+
+
+
+});
+continents.on('mouseleave', function() {
+  var target = $("#" + $(this).attr("data-target"));
+  console.log(target.find('h2'));
+  target.find('h2').removeClass('highlight');
+
+
 
 });
 
+// var map = $(".map");
+//
+// map.on('click', function(evt){
+//     evt.preventDefault();
+//     if ($this)
+//
+// });
 
 
 
-//   $('#amerique_nord').click(function (e) {
-//   e.preventDefault()
-//   $(this).tab('show')
-// });
-// $('#europe').click(function (e) {
-// e.preventDefault()
-// $(this).tab('show')
-// });
-// $('#asie').click(function (e) {
-// e.preventDefault()
-// $(this).tab('show')
-// });
-// $('#amerique_sud').click(function (e) {
-// e.preventDefault()
-// $(this).tab('show')
-// });
-// $('#afrique').click(function (e) {
-// e.preventDefault()
-// $(this).tab('show')
-// });
-// $('#australie').click(function (e) {
-// e.preventDefault()
-// $(this).tab('show')
-// });
+
+
+//$('.carousel').carousel();
+
+
 
 });
