@@ -50,36 +50,6 @@ $(document).ready(function() {
     $('.bxslider').bxSlider();
 
 
-    // -----------------------------boutons Lire la suite-------------------------
-    //
-    // $(".more").hide();
-    // jQuery('.button-read-more').click(function() {
-    //     $(this).closest('.less').addClass('active');
-    //     $(this).closest(".less").prev().stop(true).slideDown("1000");
-    // });
-    // jQuery('.button-read-less').click(function() {
-    //     $(this).closest('.less').removeClass('active');
-    //     $(this).closest(".less").prev().stop(true).slideUp("1000");
-    // });
-
-    // ------------------------ menus déroulants conservation---------------
-
-  //   jQuery('.button-conservation-more').click(function () {
-	//  // one at a time
-	//  $('.more').hide();
-	//  $('.less').removeClass('active');
-  //  });
-   //
-  //   jQuery('.button-conservation-more').click(function() {
-  //       $(this).closest('.less').addClass('active');
-  //       $(this).closest(".less").next().stop(true).slideDown("1000");
-  //   });
-  //   jQuery('.button-conservation-less').click(function() {
-  //       $(this).closest('.less').removeClass('active');
-  //       $(this).closest(".less").next().stop(true).slideUp("1000");
-  //
-  //   });
-
 // --------------------------------- Boutons Map ---------------------
 
 var tabBtns = $('.my-tab-btn');
@@ -113,8 +83,6 @@ tabBtns.on('click', function(evt) {
         i.addClass('fa-caret-up').removeClass('fa-caret-down');
     }
   }
-  // tabs.fadeOut();
-  // tabs.eq(tabBtns.index(this)).fadeIn();
 
 });
 
@@ -124,35 +92,22 @@ tabBtns.on('click', function(evt) {
 var continents = $('.js-map');
 
 continents.on('mouseover', function() {
-  var target = $("#" + $(this).attr("data-target"));
-  console.log(target.find('h2'));
-  target.find('h2').addClass('highlight');
-
-
-
+  var target = $("#" + $(this).data("target"));
+  target.find('h2').toggleClass('highlight');
 });
+
 continents.on('mouseleave', function() {
-  var target = $("#" + $(this).attr("data-target"));
-  console.log(target.find('h2'));
+  var target = $("#" + $(this).data("target"));
   target.find('h2').removeClass('highlight');
-
-
-
 });
 
-// var map = $(".map");
-//
-// map.on('click', function(evt){
-//     evt.preventDefault();
-//     if ($this)
-//
-// });
+continents.on('click', function() {
+  var target = $("#" + $(this).data("target"));
+  target.find('a').click();
+});
 
 
 
-
-
-//$('.carousel').carousel();
 
 
 
